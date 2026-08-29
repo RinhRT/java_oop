@@ -10,7 +10,7 @@ public class PlantUML {
         if (Modifier.isPrivate(modifiers)) return "- "; // Private
         if (Modifier.isProtected(modifiers)) return "# "; // Protect
         if (Modifier.isPublic(modifiers)) return "+ "; // Public
-        return "~ "; // Default
+        return "~ "; // Package
     }
 
     private String formatType(Class<?> type) {
